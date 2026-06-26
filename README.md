@@ -26,7 +26,7 @@ TBD
 - [ ] Month 9-10: Edge Model Deployment
 
 
-## Tech Stack
+## Planned Tech Stack (Changes may Occur)
 
 ### 3D Reconstruction
 - COLMAP  | Structure from Motion, camera pose extraction
