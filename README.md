@@ -1,3 +1,8 @@
+# DISCLAIMER
+> Status: In progress | started `June 25 2026`
+> Nothing is built yet.
+> This repository documents the built as it happens
+
 # GPU Synthetic Data Platform
 
 A GPU powered synthetic data generation platform for training 
@@ -80,5 +85,4 @@ TBD
 ### Cloud
 - AWS  | cloud GPU scaling and production deployment
 
-## Status
-In progress | started `June 25 2026`
+
