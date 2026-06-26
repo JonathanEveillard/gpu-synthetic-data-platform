@@ -24,36 +24,61 @@ TBD
 ## Tech Stack
 
 ### 3D Reconstruction
-- COLMAP | Structure from Motion, camera pose extraction
-- nerfstudio | NeRF training and novel view synthesis
-- gsplat | Gaussian Splatting (replaces NeRF, month 9+)
+- COLMAP  | Structure from Motion, camera pose extraction
+- nerfstudio  | NeRF training and novel view synthesis
+- gsplat  | Gaussian Splatting (replaces NeRF, month 9+)
 
 ### Scene Variation
-- Blender + bpy | programmatic scene variation and rendering
-- NVIDIA Omniverse | photorealistic rendering (month 7+)
+- Blender + bpy  | programmatic scene variation and rendering
+- NVIDIA Omniverse  | photorealistic rendering (month 7+)
 
 ### ML / AI
-- PyTorch | deep learning framework, training and inference
-- YOLOv8 (Ultralytics) | object detection and perception evaluation
-- Depth Anything | monocular depth estimation
-- MLflow | experiment tracking and model registry
-- TensorRT | model optimization and quantization for edge deployment
-- ONNX | model export and interoperability
+- PyTorch  | deep learning framework, training and inference
+- YOLOv8 (Ultralytics)  | object detection and perception evaluation
+- Depth Anything  | monocular depth estimation
+- MLflow  | experiment tracking and model registry
+- TensorRT  | model optimization and quantization for edge deployment
+- ONNX  | model export and interoperability
 
 ### Sim-to-Real Validation
-- FID Score (Fréchet Inception Distance) | synthetic data quality metric
+- FID Score (Fréchet Inception Distance)  | synthetic data quality metric
 
 ### Sensor Hardware
-- Intel RealSense D435 | RGB-D camera for real sensor input
-- NVIDIA Jetson Orin Nano | edge deployment target
+- Intel RealSense D435  | RGB-D camera for real sensor input
+- NVIDIA Jetson Orin Nano  | edge deployment target
 
 ### Containers
-- Docker + NVIDIA Container Toolkit | GPU-accelerated containerization
-- CUDA 12.2 | base runtime for all GPU workloads
-- GitHub Container Registry | image storage and versioning
+- Docker + NVIDIA Container Toolkit  | GPU-accelerated containerization
+- CUDA 12.2  | base runtime for all GPU workloads
+- GitHub Container Registry  | image storage and versioning
 
 ### Orchestration
-- Kubernetes | GPU
+- Kubernetes  | GPU workload orchestration
+- NVIDIA Device Plugin  | GPU resource scheduling in Kubernetes
+- Kueue  | job queuing, gang scheduling, GPU quota management
+- Helm  | Kubernetes package management
+
+### Infrastructure as Code
+- Terraform  | infrastructure provisioning and reproducibility
+
+### API Layer
+- Go  | job submission API and concurrent workload handling
+- Redis  | job queue between API and Kubernetes workers
+
+### Storage
+- MinIO  | S3-compatible object storage for renders, artifacts, metrics
+
+### CI/CD
+- GitHub Actions  | automated build, test, and deployment pipeline
+
+### Observability
+- DCGM Exporter  | GPU metrics collection
+- Prometheus  | metrics storage and querying
+- Grafana  | dashboards and visualization
+- Alertmanager  | threshold alerts and notifications
+
+### Cloud
+- AWS  | cloud GPU scaling and production deployment
 
 ## Status
 In progress | started `June 25 2026`
